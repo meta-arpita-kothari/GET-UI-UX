@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!-- HTML page for META CUBE PARKING SYTEM -->
+<!-- html start tag-->
+<html lang ="en">
+    <!-- head start tag-->
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <!-- title of page displayed on tab-->
+        <title>Metacube Parking System</title>
+        <!-- internal css-->
+        <style>
+            a{
+                color: white;
+            }
+        </style>
+    </head>
+    <!--head end tag-->
+
+    <!--body start tag-->
+    <body>
+        <!-- ===== landing page section with navigation ===== -->
+        <section id="landing-page" style="background: url('https://www.fiware.org/wp-content/uploads/2018/09/shutterstock_280510247-min.jpg'); height: 100vh; background-size: contain;">
+            <div class="navbar">
+                <header>
+                    <nav>
+                        <a href="#employee">Add Employee</a> |
+                        <a href="#vechile">Add vechile</a> |
+                        <a href="#feedback">Give Feedback</a> |
+                        <a href="#parking-pricing">Pricing</a>
+                    </nav>
+                </header>
+            </div>
+        </section>
+
+        <!-- ===== employee section ===== -->
+        <section id="employee">
+            <!-- Heading of section -->
+            <h1>Add Employee</h1>
+
+            <div class="add-employee-form">
+                <!-- form to  add employee -->
+                <form>
+                    <!-- full name of employee-->
+                    <label for="fullname">Full name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required><br><br>
+
+                    <!-- gender of employee-->
+                    <label>Gender:</label><br>
+                    <input type="checkbox" id="gender-male" name="gender-male" value="male">
+                    <label for="gender-male"> Male </label>
+                    <input type="checkbox" id="gender-female" name="gender-female" value="female">
+                    <label for="gender-female">Female</label><br><br>
+
+                    <!-- email of employee-->
+                    <label for="email">Enter your email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <!-- password of employee-->
+                    <label for="pwd">Password:</label><br>
+                    <input type="password" id="pwd" name="pwd" required><br><br>
+
+                    <!-- password confirmation of employee-->
+                    <label for="pwd-confirm">Confirm Password:</label><br>
+                    <input type="password" id="pwd-confirm" name="pwd-confirm" required><br><br>
+
+                    <!-- phone number of employee-->
+                    <label for="phone">Enter your phone number:</label><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br><br>
+
+                    <!-- subit form-->
+                    <input type="submit" value="Submit">
+                </form>
+                <!-- form end tag-->
+
+            </div>
+            <!-- add employee form div end-->
+        </section>
+        <!-- ===== employee section end ===== -->
+
+        <br>
+        <br>
+        <!-- ===== vechile section ===== -->
+        <section id="vechile">
+            <!-- Heading of section -->
+            <h1>Vechile Details</h1>
+            <div class="vechile-details-form">
+                <!-- add vehicle details-->
+                <form>
+                    <!-- vehicle brand name or company name-->
+                    <label for="vechile-brand">Vechile Brand (Company):</label><br>
+                    <input type="text" id="vechile-brand" name="vechile-brand" required><br><br>
+
+                    <!-- vehicle model-->
+                    <label for="vechile-model">Vechile model:</label><br>
+                    <input type="text" id="vechile-model" name="vechile-model" required><br><br>
+
+                    <!-- vehicle type-->
+                    <label for="vechile-type">Vechile type:</label><br>
+                    <input type="text" id="vechile-type" name="vechile-type" required><br><br>
+
+                    <!-- vehicle registered number-->
+                    <label for="vechile-number">Vechile Number:</label><br>
+                    <input type="number" id="vechile-number" name="vechile-number" pattern="[A-Z]{2}[ -][0-9]{1,2}(?: [A-Z])?(?: [A-Z]*)? [0-9]{4}" required><br><br>
+
+                    <!-- employee id of the employee whose vehicle is-->
+                    <label for="employee-id">Employee Id</label><br>
+                    <input type="number" id="employee-id" name="employee-id" required><br><br>
+
+                    <!-- vehicle identifications if any-->
+                    <label for="vechile-identification">Identify your car with color , marks etc.</label><br>
+                    <textarea id="vechile-identification" name="vechile-identification" rows="10" cols="30"></textarea><br><br>
+
+                    <!-- submit form-->
+                    <input type="submit" value="Submit">
+                </form>
+                <!-- form tag end-->
+            </div>
+            <!-- vehicle details div end-->
+        </section>
+        <!-- ===== vechile section end ===== -->
+
+        <br>
+        <br>
+
+        <!-- ===== feedback section ===== -->
+        <section id="feedback">
+            <!-- Heading of section -->
+            <h1>Get In Touch</h1>
+            <div class="feedback-form">
+                <!-- add feedback -->
+                <form>
+                    <!-- Employee Name -->
+                    <label for="empName">Employee Name:</label><br>
+                    <input type="text" id="empName" name="empName" required><br><br>
+
+                    <!-- Employee email -->
+                    <label for="empEmail">Enter your email:</label><br>
+                    <input type="email" id="empEmail" name="empEmail" required><br><br>
+
+                    <!-- Employee feedback -->
+                    <label for="feedaback">Feedback</label><br>
+                    <textarea id="feedaback" name="feedaback" rows="10" cols="30"></textarea><br><br>
+
+                    <!-- Rating-->
+                    <input type="radio" id="rating-best" name="rating" value="best">
+                    <label for="rating-best">😁</label>
+                    <input type="radio" id="rating-better" name="rating" value="better">
+                    <label for="rating-better">😃</label>
+                    <input type="radio" id="rating-good" name="rating" value="good">
+                    <label for="rating-good">🙂</label>
+                    <input type="radio" id="rating-bad" name="rating" value="bad">
+                    <label for="rating-bad">🙁</label><br>
+
+                    <!-- submit form -->
+                    <input type="submit" value="Submit">
+                </form>
+                <!-- form tag end -->
+            </div>
+            <!-- feedback form div end -->
+        </section> 
+        <!-- ===== feedback section end ===== -->
+
+        <br>
+        <br>
+
+        <!-- ===== pricing section ===== -->
+        <section id="parking-pricing">
+            <!-- Heading of section -->
+            <h1>Vechile Pricing</h1>
+
+            <!-- div for CYCLE pricing -->
+            <div class="cycle-pricing">
+                <h3>Cycle</h3>
+                <div class="monthly-pricing-circle">
+                    <h4>$100</h4>
+                    <p>/month</p>
+                </div>
+                <div class="all-pricing">
+                    <p>$5 daily</p>
+                    <p>$100 monthly</p>
+                    <p>$500 yearly</p>
+                </div>
+                <button type="button">Purchase Now</button>
+
+            </div>
+            <!-- div for CYCLE pricing end -->
+
+            <!-- div for MOTORCYCLE pricing -->
+            <div class="motorcycle-pricing">
+                <h3>Motor Cycle</h3>
+                <div class="monthly-pricing-circle">
+                    <h4>$200</h4>
+                    <p>/month</p>
+                </div>
+                <div class="all-pricing">
+                    <p>$10 daily</p>
+                    <p>$200 monthly</p>
+                    <p>$1000 yearly</p>
+                </div>
+                <button type="button">Purchase Now</button>
+                
+            </div>
+            <!-- div for MOTORCYCLE pricing end -->
+
+            <!-- div for FourWheeler pricing -->
+            <div class="four-wheeler-pricing">
+                <h3>Four Wheeler</h3>
+                <div class="monthly-pricing-circle">
+                    <h4>$500</h4>
+                    <p>/month</p>
+                </div>
+                <div class="all-pricing">
+                    <p>$20 daily</p>
+                    <p>$500 monthly</p>
+                    <p>$3500 yearly</p>
+                </div>
+                <button type="button">Purchase Now</button>
+                
+            </div>
+            <!-- div for FourWheeler pricing end -->
+        </section>
+        <!-- ===== pricing section end ===== -->
+
+        <!-- ===== footer section ===== -->
+        <section id="footer" >
+            
+            <footer>
+                <p>
+                    Metacube Parking Contact<br>
+                    <a href="mailto:parking.contact@metacube.com">parking.contact@metacube.com</a>
+                </p>
+              </footer>
+            
+        </section>
+        <!-- ===== footer section end ===== -->
+    </body>
+    <!-- body end tag-->
+</html>
+<!-- html end tag-->
