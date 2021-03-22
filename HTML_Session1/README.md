@@ -2,14 +2,14 @@
 ### Assignments for Session 1
 
 #### INSTRUCTIONS :- 
-_(i)  Only the HTML part is required for this assignment. No need to focus on achieving the same styling as depicted in images etc.
-(ii) Selection of tags is a very important criteria for the evaluation.
-(iii) Give meaningful id & class names for elements wherever required.
-(iv) Try to create reusable things.
-(v) Add comments wherever possible to make the code more readable.	
+	(i)  Only the HTML part is required for this assignment. No need to focus on achieving the same styling as depicted in images etc.
+	(ii) Selection of tags is a very important criteria for the evaluation.
+	(iii) Give meaningful id & class names for elements wherever required.
+	(iv) Try to create reusable things.
+	(v) Add comments wherever possible to make the code more readable.	
 
 
-**Assume a Metacube Parking System. **
+** Assume a Metacube Parking System. **
 
 Create a landing page for the website of the above system as described. Create a navbar with navigation items. Add any covering image of your choice for the system. There will be 4 navigation items - 
           Add Employee
