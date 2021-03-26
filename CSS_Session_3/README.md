@@ -13,3 +13,6 @@ Use proper comments to define the significance of the code.
 Use CSS3 transform and transition properties to give suitable animated effects wherever needed.
 Use flexbox property to align the elements in the design layout
 
+
+Other information: 
+Download Roboto google fonts and fontawesome-free-5.15.3-web into folder '/assets/'
