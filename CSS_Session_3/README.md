@@ -3,7 +3,7 @@
 
 1) Create the structure of the website template using HTML5 and CSS3 given in the following dropbox URL -
 
-UI Assignment 3[a link](https://drive.google.com/drive/folders/16N2fr6QJtFVQMddy3RepAVZ7vlBu_wFs?usp=sharing)
+[UI Assignment 3](https://drive.google.com/drive/folders/16N2fr6QJtFVQMddy3RepAVZ7vlBu_wFs?usp=sharing)
 
 (You will also find other required assets like images, font files at the same dropbox URL)
 
