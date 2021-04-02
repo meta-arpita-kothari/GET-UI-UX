@@ -1,0 +1,102 @@
+body{
+    overflow-x: hidden;
+}
+.txt_white{
+    color: #ffffff;
+}
+
+main{
+    margin: 1rem;
+}
+.vertical-nav{
+    min-width: 16rem;
+    width: 16rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #fff;
+    
+}
+
+.page-content{
+    position: relative;
+    width: calc(100% - 16rem);
+    min-height: 1000px;
+    margin-left: 16rem;
+    background-color: #EFF3F6;
+}
+
+.side_tab{
+
+}
+.side_tab:hover{
+    background-color: #E7E9FC;
+    color: rgb(16, 101, 175);
+}
+
+.card_box{
+    margin:0 1rem;
+    width: 100%; 
+    min-height: 150px; 
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.nav-content{
+    height: 80%;
+    overflow-x: hidden;
+
+}
+/* width */
+.nav-content::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .nav-content::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .nav-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  
+  }
+  
+  /* Handle on hover */
+  .nav-content::-webkit-scrollbar-thumb:hover {
+    background: rgb(223, 220, 220); 
+    border-radius: 10px; 
+  }
+
+  .chart-arrow{
+    margin-left: 83px;
+  }
+
+  .icon-arrow{
+      margin-left: 89px;
+  }
+
+  .table-arrow{
+      margin-left:81px;
+  }
+
+  .pages-arrow{
+      margin-left: 81px;
+  }
+
+  .search-icon{
+    color: ghostwhite;
+    margin-left: -40px;
+    opacity: 0.7;
+  }
+
+  .forms-icon{
+    margin-left:85px; 
+    font-size: 10px; 
+    font-weight: bold;
+    color: whitesmoke;
+  }
+
+  

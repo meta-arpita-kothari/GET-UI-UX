@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- bootstrap dashboard - create vertical navbar and horizontal navbar -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css files added -->
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Annex</title>
+</head>
+
+ <body>
+
+    <!-- vertical navbar -->
+    <div class="vertical-nav bg-light">
+
+        <!-- logo -->
+        <div class="row">
+            <div class="p-5 col d-flex justify-content-center align-items-center">
+                <strong>ANNEX</strong>
+            </div>
+        </div>
+        <!-- nav-content -->
+        <div class="nav-content p-1">
+            <!-- main tabs -->
+            <div class="pl-3 pr-3  d-flex justify-content-start align-items-center side_tab">
+                <p class="ml-2" style="font-size: small;">Main</p>
+            </div>
+            <!-- dahboard -->
+            <div class="p-3 d-flex justify-content-start align-items-center side_tab">
+                <i class="fas fa-desktop ml-3 mr-4"></i>
+                <p class="m-0">Dashboard</p>
+                <i class="border-0 bg-primary rounded-pill p-1 forms-icon ml-5">7</i>
+            </div>
+            <!-- dashboard- dropdown -->
+            <div class="accordion" id="accordionAdvancedUI">
+                <div id="headingAdvancedUI" class="p-3 d-flex justify-content-start align-items-center side_tab collapsed"
+                    type="div" data-toggle="collapse" data-target="#collapseAdvancedUI" aria-expanded="false"
+                    aria-controls="collapseAdvancedUI">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layers-fill mr-4 ml-3" viewBox="0 0 16 16">
+                        <path d="M7.765 1.559a.5.5 0 0 1 .47 0l7.5 4a.5.5 0 0 1 0 .882l-7.5 4a.5.5 0 0 1-.47 0l-7.5-4a.5.5 0 0 1 0-.882l7.5-4z"/>
+                        <path d="m2.125 8.567-1.86.992a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882l-1.86-.992-5.17 2.756a1.5 1.5 0 0 1-1.41 0l-5.17-2.756z"/>
+                      </svg>
+                    <p class="m-0">Advanced UI</p>
+                    <i class="fas fa-chevron-right ml-5"></i>
+                </div>
+                <div id="collapseAdvancedUI" class="collapse" aria-labelledby="headingAdvancedUI"
+                    data-parent="#accordionAdvancedUI">
+                    <nav class="nav flex-column ">
+                        <a class="nav-link text-dark side_tab px-5" href="#">Highlight</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Rating</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Alertify</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#" tabindex="-1" aria-disabled="true">Range Slider</a>
+                    </nav>
+                </div>
+            </div>
+            <!-- calender -->
+            <div class="p-3 d-flex justify-content-start align-items-center side_tab">
+                <i class="far fa-calendar-alt ml-3 mr-4"></i>
+                <p >Calendar</p>
+            </div>
+            <!-- components tab -->
+            <div class="p-3 d-flex justify-content-start align-items-center side_tab">
+                <p class="ml-3">Components</p>
+            </div>
+            <!--  ui elements -->
+            <div class="accordion" id="accordionUIElements">
+                <div id="headingUIElements" class="p-3 d-flex justify-content-start align-items-center side_tab collapsed"
+                    type="div" data-toggle="collapse" data-target="#collapseUIElements" aria-expanded="false"
+                    aria-controls="collapseUIElements">
+                    <i class="fab fa-gg-circle ml-3 mr-4"></i>
+                    <p class="m-0">UI Elements</p>
+                    <i class="fas fa-chevron-right ml-5"></i>
+                </div>
+                <!-- ui elements dropdown -->
+                <div id="collapseUIElements" class="collapse" aria-labelledby="headingUIElements"
+                    data-parent="#accordionUIElements">
+                    <nav class="nav flex-column ">
+                        <a class="nav-link text-dark side_tab px-5" href="#">Buttons</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Cards</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Tabs </a>
+                        <a class="nav-link text-dark side_tab px-5" href="#" >Accordians</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Modal</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Images</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Alerts </a>
+                        <a class="nav-link text-dark side_tab px-5" href="#" >Progress Bars</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Dropdown</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Navs</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Badge</a> 
+                        <a class="nav-link text-dark side_tab px-5" href="#" >Videos</a>
+                      </nav>
+                </div>
+            </div>
+            <!-- forms -->
+            <div class="p-3 d-flex justify-content-start align-items-center side_tab">
+                <i class="fab fa-wpforms ml-3 mr-4"></i>
+                <p class="m-0">Forms</p>
+                <i class="border-0 bg-primary rounded-pill p-1 forms-icon">8</i>
+            </div>
+            <!-- charts -->
+            <div class="accordion" id="accordionCharts">
+                <div id="headingCharts" class="p-3 d-flex justify-content-start align-items-center side_tab collapsed"
+                    type="div" data-toggle="collapse" data-target="#collapseCharts" aria-expanded="false"
+                    aria-controls="collapseCharts">
+                    <i class="fas fa-chart-pie ml-3 mr-4"></i>
+                    <p class="m-0">Charts</p>
+                    <i class="fas fa-chevron-right ml-6 chart-arrow"></i>
+                </div>
+                <!-- charts drop down -->
+                <div id="collapseCharts" class="collapse" aria-labelledby="headingCharts" data-parent="#accordionCharts">
+                    <nav class="nav flex-column ">
+                        <a class="nav-link text-dark side_tab px-5" href="#">Morris Chart</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Chartist chart</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Flot chart</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#" >C3 chart</a>
+                      </nav>
+                </div>
+            </div>
+            <!-- icons -->
+            <div class="accordion" id="accordionIcons">
+                <div id="headingIcons" class="p-3 d-flex justify-content-start align-items-center side_tab collapsed"
+                    type="div" data-toggle="collapse" data-target="#collapseIcons" aria-expanded="false"
+                    aria-controls="collapseIcons">
+                    <i class="fas fa-icons ml-3 mr-4"></i>
+                    <p class="m-0">Icons</p>
+                    <i class="fas fa-chevron-right icon-arrow"></i>
+                </div>
+                <!-- icons dropdown -->
+                <div id="collapseIcons" class="collapse" aria-labelledby="headingIcons" data-parent="#accordionIcons">
+                    <nav class="nav flex-column ">
+                        <a class="nav-link text-dark side_tab px-5" href="#">Material designs</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Ion Icon</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Font awesome</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Themify icons</a>
+                      </nav>
+                </div>
+            </div>
+
+            <!-- tables -->
+            <div class="accordion" id="accordionTables">
+                <div id="headingTables" class="p-3 d-flex justify-content-start align-items-center side_tab collapsed"
+                    type="div" data-toggle="collapse" data-target="#collapseTables" aria-expanded="false"
+                    aria-controls="collapseTables">
+                    <i class="fas fa-table ml-3 mr-4"></i>
+                    <p class="m-0">Tables</p>
+                    <i class="fas fa-chevron-right table-arrow"></i>
+                </div>
+                <!-- tables dropdown -->
+                <div id="collapseTables" class="collapse" aria-labelledby="headingTables" data-parent="#accordionTables">
+                    <nav class="nav flex-column ">
+                        <a class="nav-link text-dark side_tab px-5" href="#">Basic Table</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Data Table</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Responsive Table</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#" >Editable Table</a>
+                      </nav>
+                </div>
+            </div>
+
+            <!-- extra tab -->
+            <div class="p-3 d-flex justify-content-start align-items-center side_tab">
+                <p  class="ml-3">Extra</p>
+            </div>
+            <!-- maps -->
+            <div class="p-3 d-flex justify-content-start align-items-center side_tab">
+                <i class="fas fa-map-marker-alt ml-3 mr-4"></i>
+                <p class="m-0">Maps</p>
+                <i class="border-0 bg-danger rounded-pill p-1 forms-icon">2</i>
+            </div>
+
+            <!-- pages -->
+            <div class="accordion" id="accordionPages">
+                <div id="headingPages" class="p-3 d-flex justify-content-start align-items-center side_tab collapsed"
+                    type="div" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false"
+                    aria-controls="collapsePages">
+                    <i class="fas fa-pager ml-3 mr-4"></i>
+                    <p class="m-0">Pages</p>
+                    <i class="fas fa-chevron-right pages-arrow"></i>
+                </div>
+                <!-- pages dropdown -->
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionPages">
+                    <nav class="nav flex-column ">
+                        <a class="nav-link text-dark side_tab px-5" href="#">Login</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Register</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Recover Password</a>
+                        <a class="nav-link text-dark side_tab px-5" href="#">Blank page</a>
+                      </nav>
+                </div>
+            </div>
+
+        </div>
+        <!-- nav content end -->
+
+    </div>
+    <!-- vertical nav end -->
+
+    <!-- content -->
+    <div class="page-content">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #5B6BE8;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- search area-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0 mr-auto d-flex justify-content-start align-items-center">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search" style="border-radius: 2.25rem;
+                    height: 2rem; background-color: #6D7BEB; border: #6D7BEB;">
+                    <!-- search icon -->
+                    <i class="fas fa-search search-icon"><a href="#"></a></i>
+                </form>
+
+                <!--notification list  -->
+                <ul class="navbar-nav">
+                    <!-- language and its flag-->
+                    <li class="nav-item d-flex justify-content-start align-items-center notification-list">
+                        <a class="nav-link" href="#" style="color: #fff;">English</a>
+                        <img style="width: 1.25rem;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLX49Y9F2RiGwGvMF1mqh2am5y3-6N-xcBFAHQkFb8Epgrcux8NaE9k-yLv3NWaGPyFPw&usqp=CAU"
+                            alt="">
+                    </li>
+                    <!-- email notification -->
+                    <li class="nav-item d-flex justify-content-start align-items-center ml-4">
+                        <a class="nav-link txt_white" href="#"><span><i class="far fa-envelope"
+                                    style="color: #fff;"></i></span></a>
+                        <span class="badge badge-danger">5</span>
+                    </li>
+                    <!-- notification bell -->
+                    <li class="nav-item d-flex justify-content-start align-items-center ml-4">
+                        <a class="nav-link txt_white" href="#"><span><i class="far fa-bell"
+                                    style="color: #fff;"></i></span></a>
+                        <span class="badge badge-success">23</span>
+                    </li>
+                    <!-- profile -->
+                    <li class="nav-item d-flex justify-content-start align-items-center ml-4">
+                        <a class="nav-link" href="#"><img style="width: 2.5rem; margin: 0; border-radius: 50%;"
+                                src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+                                alt=""></a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <!-- navbar end -->
+
+        <!-- main -page content-->
+        <main>
+            <div>
+                <h5 class="mx-3"><strong>Dashboard</strong></h5>
+                <div class="d-flex justify-content-between align-items-start my-4">
+                    <div class="card_box">
+                        <img src="assets/images/box1.png" alt="">
+                    </div>
+                    <div class="card_box">
+                        <img src="assets/images/box2.png" alt="">
+                    </div>
+                    <div class="card_box">
+                        <img src="assets/images/box3.png" alt="">
+                    </div>
+                    <div class="card_box">
+                        <img src="assets/images/box4.png" alt="">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-start my-4">
+                    <div class="card_box">
+                        <img src="assets/images/graph.png" alt="">
+                    </div>
+                    <div class="card_box">
+                        <img src="assets/images/circular_graph.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main page content end -->
+        <!-- javascript files added -->
+        <script src="assets/js/jquery-3.6.0.slim.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+ </body>
+
+</html>
