@@ -1,0 +1,296 @@
+html , body {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: white!important;
+    text-decoration: none;
+}
+
+form{
+    color: #072a3d;
+    padding: 2%;
+}
+label{
+  font-weight: bold;
+}
+
+.activeInput{
+  display:block;
+}
+
+.inactiveInput{
+  display: none;
+}
+
+
+
+#landing-page{
+    /* background: url('https://www.fiware.org/wp-content/uploads/2018/09/shutterstock_280510247-min.jpg'); */
+    background: url('images/cover.png');
+    height: 20vh;
+    background-size: contain;
+    padding: 20px;
+    position: relative;
+    
+}
+
+#landing-page > h1 {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    width: 70%;
+    font-size: 60px;
+    color: rgb(230, 216, 199);
+}
+
+
+.collapsible-button {
+    background-color: #45aae3;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    margin: 20px 0px;
+  }
+  
+  .active, .collapsible-button:hover {
+    background-color: #21668d;
+  }
+  
+  .collapsible-button:after {
+    content: '\2212';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\002B";
+  }
+  
+  .collapsible-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 18px;
+    max-height: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s linear;
+    background-color: transparent;
+  }
+ 
+  input:hover{
+      border: 2px solid #b3c5cf !important;
+  }
+
+  input:active{
+    border: 2px solid #b3c5cf;
+  }
+
+  input:not([type=checkbox],[type=radio],[type=submit]){
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #175f88;
+    margin-top: 9px;
+  }
+
+  input[type=checkbox],[type=radio]{
+      margin-top: 9px;
+      width: 30px;
+      height: 20px;
+      border: 2px solid #175f88 !important;
+  }
+
+  .submit-button{
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: #21678e;
+    border: none;
+    border-radius: 5px;
+  }
+
+  textarea{
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid #175f88;
+    margin-top: 9px;
+  }
+
+  textarea:hover{
+    border: 2px solid #b3c5cf !important;
+}
+
+
+  .pricing-header{
+    background-color: #45aae3;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    /* /*width: 100%; */
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    margin: 20px 0px;
+  }
+
+  .pricing-container{
+      display: flex;
+      align-items: center;
+
+      justify-content: space-around;
+  }
+
+  .pricing-box{
+    border: 2px solid #175f88;
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pricing-circle{
+    border: 2px solid #0f425e;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .pricing-circle > h1{
+      margin: 20px;
+      font-size: 25px;
+  }
+
+  .pass-box{
+    display: flex;
+    border: 2px solid #175f88;
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 430px;
+  }
+
+  .pass-price-circle{
+    border: 2px solid #0f425e;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+.pass-price-circle > h1{
+  margin-bottom: -10px;
+    font-size: 25px;
+}
+
+.pass-price-circle > p{
+  font-size: 17px;
+    color: #347498;
+}
+
+
+
+  .purchase-button{
+    margin: 5px 0px 20px 0px;
+    height: 45px;
+    width: 140px;
+    background-color: white;
+    border: 3px solid #347498;
+    border-radius: 10px;
+    color: #12425d;
+    font-size: 15px;
+  }
+
+  .purchase-button:hover{
+    margin: 5px 0px 20px 0px;
+    height: 47px;
+    width: 142px;
+    background-color: white;
+    border: 3px solid #0b2e42;
+    border-radius: 10px;
+    color: #0b2e42;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  #footer{
+    background-color: #042e47;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center , space-evenly;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  footer{
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact-lin{
+      color: antiquewhite;
+  }
+
+  .registration-id{
+    font-size: large;
+    font-weight: bold;
+  }
+  .error-message{
+    font-weight:700;
+    font-size: small;
+    width: 300px;
+    height: auto;
+  }
+  .input-vehicle-identification-div{
+    width: 300px;
+  }
+
+  #vehicle-type, #currency-type{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #175f88;
+    margin-top: 9px;
+  }
+
+
+  .invisible{
+    display: none;
+  }
+
+  .currency-div{
+    width: 100%;
+    margin-left: 39%;
+    margin-bottom: 50px;
+  }
+
+  .selected-vehicle-type{
+    font-size: large;
+    font-weight: bold;
+  }
