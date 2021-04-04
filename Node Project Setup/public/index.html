@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!-- HTML page for META CUBE PARKING SYTEM -->
+<!-- html start tag-->
+<html lang="en">
+<!-- head start tag-->
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- title of page displayed on tab-->
+    <title>Metacube Parking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--head end tag-->
+
+<!--body start tag-->
+
+<body>
+    <!-- ===== landing page section with navigation ===== -->
+    <section id="landing-page">
+
+        <h1>Welcome to METACUBE Parking !</h1>
+    </section>
+
+    <!-- ===== employee section ===== -->
+    <section id="employee">
+        <!-- Heading of section -->
+        <button type="button" class="collapsible-button">Add Employee</button>
+        
+        <div class="add-employee-form collapsible-content">
+            <!-- form to  add employee -->
+            
+            <img class="section-image" src="images/employee.svg" width = "400">
+
+            <form id="employee-form">
+                <!-- full name of employee-->
+                <div class="input-fullname-div activeInput">
+                    <label for="fullname">Enter your FullName</label><br>
+                    <input type="text" id="fullname" class="ready" name="fullname" required><br><br>
+                </div>
+                
+
+                <!-- gender of employee-->
+                <div class="input-gender-div inactiveInput">
+                    <label id="gender-label"></label><br>
+                    <input type="checkbox" id="gender-male" name="gender" onclick="changeDisplayGender('gender-male')" value="male">
+                    <label for="gender-male"> Male </label>
+                    <input type="checkbox" id="gender-female" name="gender" onclick="changeDisplayGender('gender-female')" value="female">
+                    <label for="gender-female">Female</label><br><br>
+                </div>
+
+
+                <!-- email of employee-->
+                <div class="input-email-div inactiveInput">
+                    <label  id="email-label" for="email"></label><br>
+                    <input type="email" id="email" name="email" required><br><br>    
+                </div>
+
+                <!-- password of employee-->
+                <div class="input-password-div inactiveInput">
+                    <label  id="password-label" for="password"></label><br>
+                    <input type="password" id="password" name="password" required ><br><br>    
+                </div>
+
+                <!-- password confirmation of employee-->
+                <div class="input-password-confirm-div inactiveInput">
+                    <label  id="password-confirm-label" for="password-confirm"></label><br>
+                    <input type="password" id="password-confirm" name="password-confirm" required><br><br>
+                </div>
+                
+
+                <!-- phone number of employee-->
+                <div class="input-phone-div inactiveInput">
+                    <label  id="phone-label" for="phone"></label><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br><br>
+                </div>
+                
+
+                <!-- submit form-->
+                <div class="input-submit-div inactiveInput">
+                    <button type="button" class="submit-button" value="Submit" onclick="SubmitEmployee()">Submit</button>
+                </div>
+                
+                <p class="error-message"></p>
+            </form>
+            <!-- form end tag-->
+
+    </div>
+        <!-- add employee form div end-->
+    </section>
+    <!-- ===== employee section end ===== -->
+
+    <br>
+    <br>
+    <!-- ===== vehicle section ===== -->
+    <section id="vehicle" class="invisible">
+        <!-- Heading of section -->
+        <button type="button" class="collapsible-button">Vehicle Details</button>
+        <div class="vehicle-details-form collapsible-content">
+            <!-- add vehicle details-->
+            <form id="vehicle-form">
+                <!-- vehicle brand name or company name-->
+                <div class="input-vehicle-name-div inactiveInput">
+                    <label for="vehicle-brand" id="vehicle-name-label">Enter your vehicle brand</label><br>
+                    <input type="text" id="vehicle-brand" name="vehicle-brand" required><br><br>
+                </div>
+                
+                <!-- vehicle type-->
+                <div class="input-vehicle-type-div inactiveInput">
+                    <label for="vehicle-type" id="vehicle-type-label"></label><br>
+                    <select name="vehicle-type"  id="vehicle-type"  onchange="selectType()"> 
+                        <option value="" disabled selected hidden>Choose Vehicle Type</option>
+                        <option value="Cycle">Cycle</option>
+                        <option value="MotorCycle">MotorCycle</option>
+                        <option value="FourWheeler">Four Wheeler</option>
+                    </select>
+                </div>
+                
+
+                <!-- vehicle registered number-->
+                <div class="input-vehicle-number-div  inactiveInput">
+                    <label for="vehicle-number" id="vehicle-number-label"></label><br>
+                    <input type="text" id="vehicle-number" name="vehicle-number"  
+                        title="example - DL 01 C AA 1111 , RJ 27 CJ 0324" ><br><br>
+                </div>
+                
+
+                <!-- employee id of the employee whose vehicle is-->
+                <div class="input-employee-id-div inactiveInput">
+                    <label for="employee-id" id="vehicle-employee-id-label"></label><br>
+                    <input type="text" id="employee-id" name="employee-id" required><br><br>
+                </div>
+                
+
+                <!-- vehicle identifications if any-->
+                <div class="input-vehicle-identification-div inactiveInput">
+                    <label for="vehicle-identification" id="vehicle-identification-label"></label><br>
+                    <textarea id="vehicle-identification" name="vehicle-identification" rows="10"
+                        cols="30"></textarea><br><br>
+                </div>
+                
+
+                <!-- submit form-->
+                <div class="input-submit-div inactiveInput ">
+                    <button type="button" class="submit-button" onclick="SubmitVehicle()">Submit</button>
+                </div>
+                
+            </form>
+
+            <img id="vehicle-img" src="images/vehiclecar.svg" width="500">
+            <!-- form tag end-->
+        </div>
+        <!-- vehicle details div end-->
+    </section>
+    <!-- ===== vehicle section end ===== -->
+
+    <br>
+    <br>
+
+    <!-- ===== pricing section ===== -->
+    <section id="parking-pricing" class="invisible">
+        <!-- Heading of section -->
+        <button type="button" class="collapsible-button">Vehicle Pricing</button>
+        <!-- <h1 class="pricing-header">vehicle Pricing</h1> -->
+        <div class="currency-div ">
+            <select name="currency-type"  id="currency-type"  onchange="changeCurrency()"> 
+                <option value="" disabled selected hidden>Change Currency</option>
+                <option value="USD">USD</option>
+                <option value="YEN">YEN</option>
+                <option value="INR">INR</option>
+            </select>
+        </div>
+        <div class="pricing-container collapsible-content ">
+        <!-- div for daily pricing -->
+            <div class="daily-pricing pricing-box">
+                <h3>Daily</h3>
+                <div class="pricing-circle">
+                    <h1 id="daily-price"></h1>
+                </div>
+                <button type="button" class="purchase-button day" onclick="getPass()">Get Pass</button>
+
+            </div>
+            <!-- div for daily pricing end -->
+
+            <!-- div for monthly pricing -->
+            <div class="monthly-pricing pricing-box">
+                <h3>Monthly</h3>
+                <div class="pricing-circle">
+                    <h1 id="monthly-price"></h1>
+                </div>
+                <button type="button" class="purchase-button month" onclick="getPass()">Get Pass</button>
+
+            </div>
+            <!-- div for monthly pricing end -->
+
+            <!-- div for yearly pricing -->
+            <div class="yearly-pricing pricing-box">
+                <h3>Yearly</h3>
+                <div class="pricing-circle">
+                    <h1 id="yearly-price"></h1>
+                </div>
+                <button type="button" class="purchase-button year" onclick="getPass()">Get Pass</button>
+            </div>
+            <!-- div for yearly pricing end -->
+        </div>
+           
+    </section>
+    <!-- ===== pricing section end ===== -->
+
+    <!-- ===== footer section ===== -->
+    <section id="footer">
+
+        <footer>
+            <h4>
+                Metacube Parking Contact
+            </h4>
+            <p>
+                <a id="contact-link" href="mailto:parking.contact@metacube.com">parking.contact@metacube.com</a>
+            </p>
+        </footer>
+
+    </section>
+    <!-- ===== footer section end ===== -->
+
+    <!-- javascript files added -->
+    <script src="js/main.js"></script>
+    <script src="js/employeeForm.js"></script>
+    <script src="js/vehicleForm.js"></script>
+
+</body>
+<!-- body end tag-->
+
+</html>
+<!-- html end tag-->
